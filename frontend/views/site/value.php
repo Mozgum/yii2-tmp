@@ -1,5 +1,4 @@
 
-fvhj
 <?php
 
 /* 
@@ -15,4 +14,12 @@ fvhj
 use yii\helpers\Html;
 use yii\helpers\HtmlPurifier;
 ?>
+
+
+<?php foreach ($model as $val):?>
+
+ <?php echo $val->name_product; ?> 
+
+<?php endforeach; ?>
  
+

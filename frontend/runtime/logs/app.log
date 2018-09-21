@@ -4859,3 +4859,239 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2018-09-21 11:12:31 [127.0.0.1][-][344ke2rpfvg8fmvd2drhikra04019nkm][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\OpenServer\domains\yiisite\frontend\views\site\_view.php in C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, NULL)
+#1 C:\OpenServer\domains\yiisite\frontend\views\site\product.php(17): yii\base\View->render('_view', Array)
+#2 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(336): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#4 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(frontend\controllers\SiteController))
+#5 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('product', Array, Object(frontend\controllers\SiteController))
+#6 C:\OpenServer\domains\yiisite\frontend\controllers\SiteController.php(139): yii\base\Controller->render('product', Array)
+#7 [internal function]: frontend\controllers\SiteController->actionProduct('2')
+#8 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('product', Array)
+#11 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/product', Array)
+#12 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OpenServer\domains\yiisite\frontend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2018-09-21 11:12:31 [127.0.0.1][-][344ke2rpfvg8fmvd2drhikra04019nkm][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '344ke2rpfvg8fmvd2drhikra04019nkm'
+    '_csrf-frontend' => '95918bb682d12776361c1222135fc5a69902bc7c311b233de7c0c7cb1660c3d1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"coX0azhX89IR2j7Y9v9q6yDYU48_iQEq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiisite'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yiisite/frontend/web/site/category'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=344ke2rpfvg8fmvd2drhikra04019nkm; _csrf-frontend=95918bb682d12776361c1222135fc5a69902bc7c311b233de7c0c7cb1660c3d1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22coX0azhX89IR2j7Y9v9q6yDYU48_iQEq%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1\\ext;c:\\openserver\\modules\\php\\PHP-7.1\\pear;c:\\openserver\\modules\\php\\PHP-7.1\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiisite'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yiisite/frontend/web/index.php'
+    'REMOTE_PORT' => '11258'
+    'REDIRECT_URL' => '/frontend/web/site/product'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/frontend/web/site/product?id=2'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537517551.458
+    'REQUEST_TIME' => 1537517551
+    'argv' => [
+        0 => 'id=2'
+    ]
+    'argc' => 1
+]
+2018-09-21 14:05:11 [127.0.0.1][-][nkrt5600e0599rg0aqc3j39vt8mu2c85][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\web\View::renderPartial() in C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\OpenServer\domains\yiisite\frontend\views\site\product.php(18): yii\base\Component->__call('renderPartial', Array)
+#1 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(336): require('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#3 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(frontend\controllers\SiteController))
+#4 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('product', Array, Object(frontend\controllers\SiteController))
+#5 C:\OpenServer\domains\yiisite\frontend\controllers\SiteController.php(139): yii\base\Controller->render('product', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionProduct('1')
+#7 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('product', Array)
+#10 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/product', Array)
+#11 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\OpenServer\domains\yiisite\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-09-21 14:05:11 [127.0.0.1][-][nkrt5600e0599rg0aqc3j39vt8mu2c85][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'nkrt5600e0599rg0aqc3j39vt8mu2c85'
+    '_csrf-frontend' => '38e5e79aab0acaffa14827ad6b73b4052f1a0dc7587b61c766c76df37d52cd93a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZTSQNmqb9ogMdEWMU5BBkjgGnfgD2zWx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiisite'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yiisite/frontend/web/site/category'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=nkrt5600e0599rg0aqc3j39vt8mu2c85; _csrf-frontend=38e5e79aab0acaffa14827ad6b73b4052f1a0dc7587b61c766c76df37d52cd93a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZTSQNmqb9ogMdEWMU5BBkjgGnfgD2zWx%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1\\ext;c:\\openserver\\modules\\php\\PHP-7.1\\pear;c:\\openserver\\modules\\php\\PHP-7.1\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiisite'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yiisite/frontend/web/index.php'
+    'REMOTE_PORT' => '12102'
+    'REDIRECT_URL' => '/frontend/web/site/product'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/frontend/web/site/product?id=1'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537527911.556
+    'REQUEST_TIME' => 1537527911
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2018-09-21 14:46:09 [127.0.0.1][-][vr76ptjffjq6aeht0hvvplm22eafo4bs][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\web\View::renderPartial() in C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\OpenServer\domains\yiisite\frontend\views\site\product.php(18): yii\base\Component->__call('renderPartial', Array)
+#1 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(336): require('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#3 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(frontend\controllers\SiteController))
+#4 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('product', Array, Object(frontend\controllers\SiteController))
+#5 C:\OpenServer\domains\yiisite\frontend\controllers\SiteController.php(139): yii\base\Controller->render('product', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionProduct('2')
+#7 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('product', Array)
+#10 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/product', Array)
+#11 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\OpenServer\domains\yiisite\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-09-21 14:46:08 [127.0.0.1][-][vr76ptjffjq6aeht0hvvplm22eafo4bs][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'vr76ptjffjq6aeht0hvvplm22eafo4bs'
+    '_csrf-frontend' => 'd087f09358fb653dbdfa5adc53e1db7c596ae96fbbcb3b6ef49a502c031cb9cea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"JA405iCgHGvHCAwfiAnZndLLN2cKtesd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiisite'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yiisite/frontend/web/site/category'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=vr76ptjffjq6aeht0hvvplm22eafo4bs; _csrf-frontend=d087f09358fb653dbdfa5adc53e1db7c596ae96fbbcb3b6ef49a502c031cb9cea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22JA405iCgHGvHCAwfiAnZndLLN2cKtesd%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1\\ext;c:\\openserver\\modules\\php\\PHP-7.1\\pear;c:\\openserver\\modules\\php\\PHP-7.1\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiisite'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yiisite/frontend/web/index.php'
+    'REMOTE_PORT' => '12394'
+    'REDIRECT_URL' => '/frontend/web/site/product'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/frontend/web/site/product?id=2'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537530368.929
+    'REQUEST_TIME' => 1537530368
+    'argv' => [
+        0 => 'id=2'
+    ]
+    'argc' => 1
+]

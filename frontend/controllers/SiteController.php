@@ -142,7 +142,7 @@ class SiteController extends Controller
     
     public function actionValue($id)
 {
-    return $this->renderAjax('value');
+    return $this->renderPartial('value');
 }
     
     

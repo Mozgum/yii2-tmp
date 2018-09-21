@@ -11,13 +11,15 @@ use yii\widgets\ListView;
 
 <?php Pjax::begin(['id' => 'some_pjax_id']) ?>
 
-<?php foreach ($model as $val):?>
+
 
 <?php
- echo Html::a('', ['site/value' , 'group_id' => $val->id ], ['class' => 'btn btn-lg btn-primary glyphicon glyphicon-arrow-down',
-           'data-pjax' => 1]);
+ echo $this->render('value', [
+          'model'=>$model,
+      ]);
 ?>
-<?php endforeach; ?>
+
+
      
  <?php Pjax::end() ?>
 
