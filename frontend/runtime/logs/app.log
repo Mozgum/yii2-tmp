@@ -4718,3 +4718,144 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-09-20 15:15:49 [127.0.0.1][-][c999le32r10q25srouu2qarvkj92ploi][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('value', Array)
+#3 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/value', Array)
+#4 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OpenServer\domains\yiisite\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2018-09-20 15:15:49 [127.0.0.1][-][c999le32r10q25srouu2qarvkj92ploi][info][application] $_GET = [
+    '_pjax' => '#some_pjax_id'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'c999le32r10q25srouu2qarvkj92ploi'
+    '_csrf-frontend' => 'b9ace432fe6ea982bae613d0f1469aab05c84d5d9ebb16b0a2e6c69423dd0693a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"DUvuEuzWk8IaseoiqEQZDC20hOZ-u_iq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiisite'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'fccSpi_G8wliEJ1kqhPrQa0vq-cy4T-G3op89ZBZfRE5kmTTarOJXgko1AXZdoQo3Gr6vXaiDba2xSbY5QYUYA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#some_pjax_id'
+    'HTTP_REFERER' => 'http://yiisite/frontend/web/site/product?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c999le32r10q25srouu2qarvkj92ploi; _csrf-frontend=b9ace432fe6ea982bae613d0f1469aab05c84d5d9ebb16b0a2e6c69423dd0693a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22DUvuEuzWk8IaseoiqEQZDC20hOZ-u_iq%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1\\ext;c:\\openserver\\modules\\php\\PHP-7.1\\pear;c:\\openserver\\modules\\php\\PHP-7.1\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiisite'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yiisite/frontend/web/index.php'
+    'REMOTE_PORT' => '9553'
+    'REDIRECT_URL' => '/frontend/web/site/value'
+    'REDIRECT_QUERY_STRING' => '_pjax=%23some_pjax_id'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => '_pjax=%23some_pjax_id'
+    'REQUEST_URI' => '/frontend/web/site/value?_pjax=%23some_pjax_id'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537445749.445
+    'REQUEST_TIME' => 1537445749
+    'argv' => [
+        0 => '_pjax=%23some_pjax_id'
+    ]
+    'argc' => 1
+]
+2018-09-20 15:15:49 [127.0.0.1][-][c999le32r10q25srouu2qarvkj92ploi][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('value', Array)
+#3 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/value', Array)
+#4 C:\OpenServer\domains\yiisite\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OpenServer\domains\yiisite\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2018-09-20 15:15:49 [127.0.0.1][-][c999le32r10q25srouu2qarvkj92ploi][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'c999le32r10q25srouu2qarvkj92ploi'
+    '_csrf-frontend' => 'b9ace432fe6ea982bae613d0f1469aab05c84d5d9ebb16b0a2e6c69423dd0693a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"DUvuEuzWk8IaseoiqEQZDC20hOZ-u_iq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiisite'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yiisite/frontend/web/site/product?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c999le32r10q25srouu2qarvkj92ploi; _csrf-frontend=b9ace432fe6ea982bae613d0f1469aab05c84d5d9ebb16b0a2e6c69423dd0693a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22DUvuEuzWk8IaseoiqEQZDC20hOZ-u_iq%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-7.1\\ext;c:\\openserver\\modules\\php\\PHP-7.1\\pear;c:\\openserver\\modules\\php\\PHP-7.1\\pear\\bin;c:\\openserver\\modules\\php\\PHP-7.1;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7\\bin;c:\\openserver\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiisite'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/yiisite'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yiisite/frontend/web/index.php'
+    'REMOTE_PORT' => '9569'
+    'REDIRECT_URL' => '/frontend/web/site/value'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/site/value'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537445749.505
+    'REQUEST_TIME' => 1537445749
+    'argv' => []
+    'argc' => 0
+]
